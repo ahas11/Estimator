@@ -16,8 +16,13 @@ const SprayFoam = () => {
           <MenuButton>Spray Foam Type</MenuButton>
           <MenuItems anchor="bottom">
             <MenuItem>
-              <a className="block data-[focus]:bg-blue-100" href="/wall">
+              <a className="block data-[focus]:bg-blue-100 bg-slate-500" href="/wall">
                 Wall
+              </a>
+            </MenuItem>
+            <MenuItem>
+              <a className="block data-[focus]:bg-blue-100 bg-slate-500" href="">
+                Rim Joist
               </a>
             </MenuItem>
           </MenuItems>

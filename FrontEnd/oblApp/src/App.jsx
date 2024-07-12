@@ -3,7 +3,10 @@ import './App.css'
 import Home from './pages/Home'
 import Wall from './pages/Wall'
 import { Toaster } from 'sonner'
-import SprayFoam from './pages/sprayFoam'
+import SprayFoam from './pages/SprayFoam'
+import Clients from './pages/Clients'
+import InsulationType from './pages/InsulationType'
+import Scope from './pages/Scope'
 
 function App() {
 
@@ -15,6 +18,9 @@ function App() {
         <Route path='/dashboard' element={<Home />} />
         <Route path='/sprayFoam' element={<SprayFoam />} />
         <Route path='/wall' element={<Wall />} />
+        <Route path='/clients' element={<Clients />} />
+        <Route path='/insulationtype' element={<InsulationType />} />
+        <Route path='/scope' element={<Scope />} />
           
         </Route>
         <Route path='/home' element={<Home />} />

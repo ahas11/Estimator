@@ -7,22 +7,45 @@ const InsulationType = () => {
       <div className="flex justify-center">
         <h1 className="text-black">OBL Estimator tool</h1>
         <Menu>
-          <MenuButton>Insulation Types</MenuButton>
-          <MenuItems anchor="bottom">
+          <MenuButton className="px-4 py-2 text-white bg-blue-600 rounded">
+            Insulation Types
+          </MenuButton>
+          <MenuItems className="mt-2 origin-top-left bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <MenuItem>
-              <a className="block data-[focus]:bg-blue-100 bg-slate-500" href="/sprayFoam">
-                Spray Foam
-              </a>
+              {({ active }) => (
+                <a
+                  className={`${
+                    active ? 'bg-blue-100' : 'bg-white'
+                  } block px-4 py-2 text-black`}
+                  href="/sprayFoam"
+                >
+                  Spray Foam
+                </a>
+              )}
             </MenuItem>
             <MenuItem>
-              <a className="block data-[focus]:bg-blue-100 bg-slate-500" href="">
-                Blown Cellulose
-              </a>
+              {({ active }) => (
+                <a
+                  className={`${
+                    active ? 'bg-blue-100' : 'bg-white'
+                  } block px-4 py-2 text-black`}
+                  href=""
+                >
+                  Blown Cellulose
+                </a>
+              )}
             </MenuItem>
             <MenuItem>
-              <a className="block data-[focus]:bg-blue-100 bg-slate-500" href="">
-                Batts
-              </a>
+              {({ active }) => (
+                <a
+                  className={`${
+                    active ? 'bg-blue-100' : 'bg-white'
+                  } block px-4 py-2 text-black`}
+                  href=""
+                >
+                  Batts
+                </a>
+              )}
             </MenuItem>
           </MenuItems>
         </Menu>
